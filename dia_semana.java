@@ -1,11 +1,7 @@
-import java.util.Scanner;
 
 public class dia_semana {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("Digite um número de 1 a 7: ");
-        int numero = sc.nextInt();
+    void main() {
+        int numero = Integer.parseInt(IO.readln("Digite um número de 1 a 7: "));
 
         String dia = switch (numero) {
             case 1 -> "Domingo";
@@ -18,8 +14,6 @@ public class dia_semana {
             default -> "Opção inválida!";
         };
 
-        System.out.println(dia);
-
-        sc.close();
+        IO.println(dia);
     }
 }
