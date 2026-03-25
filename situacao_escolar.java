@@ -28,6 +28,12 @@ public class situacao_escolar {
         } else {
             IO.print("Infelizmente, você foi reprovado. Se esforce mais na próxima vez!");
         }
+        char resposta = IO.readln("Deseja saber a situação de outro aluno? (s/n)").charAt(0);
+        if (resposta == 's' || resposta == 'S') {
+        main(); // Chama o método main novamente para reiniciar o processo
+        } else {
+            IO.println("Encerrando. Até mais!");
+        }
 
     }
 }
