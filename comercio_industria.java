@@ -15,5 +15,13 @@ public class comercio_industria {
         }
 
         IO.println(String.format("Valor da conta: R$ %.2f%n", valor));
+        
+        char resposta = IO.readln("Deseja realizar outra operação? (s/n)").charAt(0);
+
+        if (resposta == 's' || resposta == 'S') {
+        main(); // Chama o método main novamente para reiniciar
+        } else {
+            IO.println("Encerrando a calculadora. Até mais!");
+        }
     }
 }

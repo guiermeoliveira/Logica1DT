@@ -15,5 +15,11 @@ public class dia_semana {
         };
 
         IO.println(dia);
+        char resposta = IO.readln("Deseja reiniciar? (s/n)").charAt(0);
+        if (resposta == 's' || resposta == 'S') {
+        main(); // Chama o método main novamente para reiniciar
+        } else {
+            IO.println("Encerrando. Até mais!");
+        }
     }
 }
